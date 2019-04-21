@@ -10,7 +10,7 @@ pipeline:
     secrets: [ ssh_password ]
     target: /root
     source:
-      - /drone/src/github.com/horsekitlin/tomas-home-page
+      - /drone/src/github.com/horsekitlin/health-data-manager
     when:
       branch: master
 
@@ -25,7 +25,7 @@ pipeline:
     script:
       - . /root/.nvm/nvm.sh && nvm use 10.9.0
       - mkdir -p /var/www/html/health-demo.tomas.website
-      - cd /root/drone/src/github.com/horsekitlin/tomas-home-page
+      - cd /root/drone/src/github.com/horsekitlin/health-data-manager
       - yarn install
       - yarn build
       - cp -a build/* /var/www/html/health-demo.tomas.website
