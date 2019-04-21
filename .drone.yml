@@ -34,7 +34,3 @@ pipeline:
     when:
       branch: master
       
-  frontend:
-    image: node:latest
-    commands:
-      - echo 123
