@@ -33,4 +33,3 @@ pipeline:
       - rm -rf /root/drone
     when:
       branch: master
-      
