@@ -1,3 +1,6 @@
+![build status](http://ci.tomas.website/api/badges/reactgrils/health-data-manager/status.svg?branch=master)
+
+
 [Demo url](http://health-demo.tomas.website/)
 
 
